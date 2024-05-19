@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I2P-Proxy</title>
+  <style>
+    body {
+      width: 200px;
+      height: 250px;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    label {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+    #i2pLogo {
+      width: 50px;
+      height: auto;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <img id="i2pLogo" src="icon/icon.png" alt="i2p Logo">
+  <label>
+    <input type="checkbox" id="proxyToggle"> Enable I2P Proxy
+  </label>
+  <label>
+    <input type="checkbox" id="jsBlockToggle"> Block JavaScript and hide fingerprint
+  </label>
+  <label>
+    <input type="checkbox" id="cookieIsolationToggle"> Cookie Isolation
+  </label>
+  <script src="popup.js"></script>
+</body>
+</html>
